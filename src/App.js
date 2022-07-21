@@ -1,13 +1,14 @@
 import React from "react"
 import {BrowserRouter} from "react-router-dom"
 import NavBar from "./Nav"
-
+import Routes from "./Routes"
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <NavBar dogs={dogs} />
+        <Routes dogs={dogs}/>
       </BrowserRouter>
     </div>
   );
